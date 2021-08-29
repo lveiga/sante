@@ -1,0 +1,27 @@
+<%= form_with(model: procedimento) do |form| %>
+  <% if procedimento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(procedimento.errors.count, "error") %> prohibited this procedimento from being saved:</h2>
+
+      <ul>
+        <% procedimento.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group">
+    <%= form.label :descricao %>
+    <%= form.text_field :descricao, class:"form-control" %>
+  </div>
+
+  <div class="field form-group" >
+    <%= form.label :valor %>
+    <%= form.text_field :valor, class:"form-control" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit  class:'btn btn-secondary'  %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class Procedimento < ApplicationRecord
+end

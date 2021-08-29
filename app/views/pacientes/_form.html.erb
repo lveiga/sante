@@ -11,27 +11,27 @@
     </div>
   <% end %>
 
-  <div class="form-label">
+  <div class="field form-group">
     <%= form.label :nome %>
-    <%= form.text_field :nome %>
+    <%= form.text_field :nome, class:"form-control" %>
   </div>
 
-  <div class="form-label">
+  <div class="field form-group">
     <%= form.label :endereco %>
-    <%= form.text_field :endereco %>
+    <%= form.text_field :endereco, class:"form-control" %>
   </div>
 
-  <div class="form-label">
+  <div class="field form-group">
     <%= form.label :contato %>
-    <%= form.text_field :contato %>
+    <%= form.text_field :contato, class:"form-control"%>
   </div>
 
-  <div class="form-label">
+  <div class="field form-group">
     <%= form.label :idade %>
-    <%= form.text_field :idade %>
+    <%= form.text_field :idade, class:"form-control" %>
   </div>
 
-  <div class="form-label">
-    <%= form.submit %>
+  <div class="field form-group">
+    <%= form.submit  class:'btn btn-secondary'%>
   </div>
 <% end %>

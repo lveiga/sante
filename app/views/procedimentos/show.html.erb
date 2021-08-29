@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @procedimento.descricao %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @procedimento.valor %>
+</p>
+
+<%= link_to 'Edit', edit_procedimento_path(@procedimento), class: "btn btn-secondary" %> |
+<%= link_to 'Back', procedimentos_path , class: "btn btn-secondary"%>
