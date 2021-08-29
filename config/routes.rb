@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :procedimentos
   resources :pacientes
   root 'home#index'
   get 'home/about'
